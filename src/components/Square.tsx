@@ -7,11 +7,9 @@ interface SquareProps {
 }
 
 function Square(props: SquareProps) {
-  const [value, setValue] = useState(props.value);
-
   return (
     <button className="square" onClick={() => props.onClick()}>
-      {value}
+      {props.value}
     </button>
   );
 }
